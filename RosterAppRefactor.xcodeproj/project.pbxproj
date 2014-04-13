@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D2422CF18F9C32000703B4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2422CE18F9C32000703B4E /* Foundation.framework */; };
+		3D2422D118F9C32000703B4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2422D018F9C32000703B4E /* CoreGraphics.framework */; };
+		3D2422D318F9C32000703B4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2422D218F9C32000703B4E /* UIKit.framework */; };
+		3D2422D918F9C32000703B4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D2422D718F9C32000703B4E /* InfoPlist.strings */; };
+		3D2422DB18F9C32000703B4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2422DA18F9C32000703B4E /* main.m */; };
+		3D2422DF18F9C32000703B4E /* RosterAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2422DE18F9C32000703B4E /* RosterAppAppDelegate.m */; };
+		3D2422E218F9C32000703B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2422E018F9C32000703B4E /* Main.storyboard */; };
+		3D2422E518F9C32000703B4E /* RosterAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2422E418F9C32000703B4E /* RosterAppViewController.m */; };
+		3D2422E718F9C32000703B4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2422E618F9C32000703B4E /* Images.xcassets */; };
+		3D2422EE18F9C32000703B4E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2422ED18F9C32000703B4E /* XCTest.framework */; };
+		3D2422EF18F9C32000703B4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2422CE18F9C32000703B4E /* Foundation.framework */; };
+		3D2422F018F9C32000703B4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2422D218F9C32000703B4E /* UIKit.framework */; };
+		3D2422F818F9C32000703B4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D2422F618F9C32000703B4E /* InfoPlist.strings */; };
+		3D2422FA18F9C32000703B4E /* RosterAppRefactorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2422F918F9C32000703B4E /* RosterAppRefactorTests.m */; };
+		3D24230518F9C35C00703B4E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D24230418F9C35C00703B4E /* Person.m */; };
+		3D24230718F9C43D00703B4E /* PeopleRoster.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D24230618F9C43D00703B4E /* PeopleRoster.plist */; };
+		3D24230A18F9C46D00703B4E /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D24230918F9C46D00703B4E /* DataSource.m */; };
+		3D24230D18F9C52900703B4E /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D24230C18F9C52900703B4E /* PersonCell.m */; };
+		3D24231018F9C5D400703B4E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D24230F18F9C5D400703B4E /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D2422F118F9C32000703B4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2422C318F9C32000703B4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2422CA18F9C32000703B4E;
+			remoteInfo = RosterAppRefactor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D2422CB18F9C32000703B4E /* RosterAppRefactor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosterAppRefactor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2422CE18F9C32000703B4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D2422D018F9C32000703B4E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D2422D218F9C32000703B4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D2422D618F9C32000703B4E /* RosterAppRefactor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RosterAppRefactor-Info.plist"; sourceTree = "<group>"; };
+		3D2422D818F9C32000703B4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D2422DA18F9C32000703B4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D2422DC18F9C32000703B4E /* RosterAppRefactor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RosterAppRefactor-Prefix.pch"; sourceTree = "<group>"; };
+		3D2422DD18F9C32000703B4E /* RosterAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RosterAppAppDelegate.h; sourceTree = "<group>"; };
+		3D2422DE18F9C32000703B4E /* RosterAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosterAppAppDelegate.m; sourceTree = "<group>"; };
+		3D2422E118F9C32000703B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D2422E318F9C32000703B4E /* RosterAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RosterAppViewController.h; sourceTree = "<group>"; };
+		3D2422E418F9C32000703B4E /* RosterAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosterAppViewController.m; sourceTree = "<group>"; };
+		3D2422E618F9C32000703B4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D2422EC18F9C32000703B4E /* RosterAppRefactorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RosterAppRefactorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2422ED18F9C32000703B4E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3D2422F518F9C32000703B4E /* RosterAppRefactorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RosterAppRefactorTests-Info.plist"; sourceTree = "<group>"; };
+		3D2422F718F9C32000703B4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D2422F918F9C32000703B4E /* RosterAppRefactorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosterAppRefactorTests.m; sourceTree = "<group>"; };
+		3D24230318F9C35C00703B4E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		3D24230418F9C35C00703B4E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		3D24230618F9C43D00703B4E /* PeopleRoster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PeopleRoster.plist; path = ../../../../../Desktop/RosterApp/PeopleRoster.plist; sourceTree = "<group>"; };
+		3D24230818F9C46D00703B4E /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		3D24230918F9C46D00703B4E /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		3D24230B18F9C52900703B4E /* PersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
+		3D24230C18F9C52900703B4E /* PersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
+		3D24230E18F9C5D400703B4E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3D24230F18F9C5D400703B4E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D2422C818F9C32000703B4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2422D118F9C32000703B4E /* CoreGraphics.framework in Frameworks */,
+				3D2422D318F9C32000703B4E /* UIKit.framework in Frameworks */,
+				3D2422CF18F9C32000703B4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2422E918F9C32000703B4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2422EE18F9C32000703B4E /* XCTest.framework in Frameworks */,
+				3D2422F018F9C32000703B4E /* UIKit.framework in Frameworks */,
+				3D2422EF18F9C32000703B4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D2422C218F9C32000703B4E = {
+			isa = PBXGroup;
+			children = (
+				3D2422D418F9C32000703B4E /* RosterAppRefactor */,
+				3D2422F318F9C32000703B4E /* RosterAppRefactorTests */,
+				3D2422CD18F9C32000703B4E /* Frameworks */,
+				3D2422CC18F9C32000703B4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D2422CC18F9C32000703B4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D2422CB18F9C32000703B4E /* RosterAppRefactor.app */,
+				3D2422EC18F9C32000703B4E /* RosterAppRefactorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D2422CD18F9C32000703B4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D2422CE18F9C32000703B4E /* Foundation.framework */,
+				3D2422D018F9C32000703B4E /* CoreGraphics.framework */,
+				3D2422D218F9C32000703B4E /* UIKit.framework */,
+				3D2422ED18F9C32000703B4E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D2422D418F9C32000703B4E /* RosterAppRefactor */ = {
+			isa = PBXGroup;
+			children = (
+				3D2422DD18F9C32000703B4E /* RosterAppAppDelegate.h */,
+				3D2422DE18F9C32000703B4E /* RosterAppAppDelegate.m */,
+				3D2422E018F9C32000703B4E /* Main.storyboard */,
+				3D2422E318F9C32000703B4E /* RosterAppViewController.h */,
+				3D2422E418F9C32000703B4E /* RosterAppViewController.m */,
+				3D24230B18F9C52900703B4E /* PersonCell.h */,
+				3D24230C18F9C52900703B4E /* PersonCell.m */,
+				3D24230E18F9C5D400703B4E /* DetailViewController.h */,
+				3D24230F18F9C5D400703B4E /* DetailViewController.m */,
+				3D24230818F9C46D00703B4E /* DataSource.h */,
+				3D24230918F9C46D00703B4E /* DataSource.m */,
+				3D24230318F9C35C00703B4E /* Person.h */,
+				3D24230418F9C35C00703B4E /* Person.m */,
+				3D2422E618F9C32000703B4E /* Images.xcassets */,
+				3D2422D518F9C32000703B4E /* Supporting Files */,
+			);
+			path = RosterAppRefactor;
+			sourceTree = "<group>";
+		};
+		3D2422D518F9C32000703B4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D24230618F9C43D00703B4E /* PeopleRoster.plist */,
+				3D2422D618F9C32000703B4E /* RosterAppRefactor-Info.plist */,
+				3D2422D718F9C32000703B4E /* InfoPlist.strings */,
+				3D2422DA18F9C32000703B4E /* main.m */,
+				3D2422DC18F9C32000703B4E /* RosterAppRefactor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D2422F318F9C32000703B4E /* RosterAppRefactorTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D2422F918F9C32000703B4E /* RosterAppRefactorTests.m */,
+				3D2422F418F9C32000703B4E /* Supporting Files */,
+			);
+			path = RosterAppRefactorTests;
+			sourceTree = "<group>";
+		};
+		3D2422F418F9C32000703B4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D2422F518F9C32000703B4E /* RosterAppRefactorTests-Info.plist */,
+				3D2422F618F9C32000703B4E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D2422CA18F9C32000703B4E /* RosterAppRefactor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2422FD18F9C32000703B4E /* Build configuration list for PBXNativeTarget "RosterAppRefactor" */;
+			buildPhases = (
+				3D2422C718F9C32000703B4E /* Sources */,
+				3D2422C818F9C32000703B4E /* Frameworks */,
+				3D2422C918F9C32000703B4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RosterAppRefactor;
+			productName = RosterAppRefactor;
+			productReference = 3D2422CB18F9C32000703B4E /* RosterAppRefactor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D2422EB18F9C32000703B4E /* RosterAppRefactorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D24230018F9C32000703B4E /* Build configuration list for PBXNativeTarget "RosterAppRefactorTests" */;
+			buildPhases = (
+				3D2422E818F9C32000703B4E /* Sources */,
+				3D2422E918F9C32000703B4E /* Frameworks */,
+				3D2422EA18F9C32000703B4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D2422F218F9C32000703B4E /* PBXTargetDependency */,
+			);
+			name = RosterAppRefactorTests;
+			productName = RosterAppRefactorTests;
+			productReference = 3D2422EC18F9C32000703B4E /* RosterAppRefactorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D2422C318F9C32000703B4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RosterApp;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Cole Bratcher";
+				TargetAttributes = {
+					3D2422EB18F9C32000703B4E = {
+						TestTargetID = 3D2422CA18F9C32000703B4E;
+					};
+				};
+			};
+			buildConfigurationList = 3D2422C618F9C32000703B4E /* Build configuration list for PBXProject "RosterAppRefactor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D2422C218F9C32000703B4E;
+			productRefGroup = 3D2422CC18F9C32000703B4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D2422CA18F9C32000703B4E /* RosterAppRefactor */,
+				3D2422EB18F9C32000703B4E /* RosterAppRefactorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D2422C918F9C32000703B4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D24230718F9C43D00703B4E /* PeopleRoster.plist in Resources */,
+				3D2422E718F9C32000703B4E /* Images.xcassets in Resources */,
+				3D2422D918F9C32000703B4E /* InfoPlist.strings in Resources */,
+				3D2422E218F9C32000703B4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2422EA18F9C32000703B4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2422F818F9C32000703B4E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D2422C718F9C32000703B4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D24230D18F9C52900703B4E /* PersonCell.m in Sources */,
+				3D2422DB18F9C32000703B4E /* main.m in Sources */,
+				3D24230A18F9C46D00703B4E /* DataSource.m in Sources */,
+				3D2422DF18F9C32000703B4E /* RosterAppAppDelegate.m in Sources */,
+				3D24230518F9C35C00703B4E /* Person.m in Sources */,
+				3D2422E518F9C32000703B4E /* RosterAppViewController.m in Sources */,
+				3D24231018F9C5D400703B4E /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2422E818F9C32000703B4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2422FA18F9C32000703B4E /* RosterAppRefactorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D2422F218F9C32000703B4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D2422CA18F9C32000703B4E /* RosterAppRefactor */;
+			targetProxy = 3D2422F118F9C32000703B4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D2422D718F9C32000703B4E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D2422D818F9C32000703B4E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D2422E018F9C32000703B4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D2422E118F9C32000703B4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D2422F618F9C32000703B4E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D2422F718F9C32000703B4E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D2422FB18F9C32000703B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D2422FC18F9C32000703B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D2422FE18F9C32000703B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RosterAppRefactor/RosterAppRefactor-Prefix.pch";
+				INFOPLIST_FILE = "RosterAppRefactor/RosterAppRefactor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D2422FF18F9C32000703B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RosterAppRefactor/RosterAppRefactor-Prefix.pch";
+				INFOPLIST_FILE = "RosterAppRefactor/RosterAppRefactor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3D24230118F9C32000703B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RosterAppRefactor.app/RosterAppRefactor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RosterAppRefactor/RosterAppRefactor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RosterAppRefactorTests/RosterAppRefactorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3D24230218F9C32000703B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RosterAppRefactor.app/RosterAppRefactor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RosterAppRefactor/RosterAppRefactor-Prefix.pch";
+				INFOPLIST_FILE = "RosterAppRefactorTests/RosterAppRefactorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D2422C618F9C32000703B4E /* Build configuration list for PBXProject "RosterAppRefactor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2422FB18F9C32000703B4E /* Debug */,
+				3D2422FC18F9C32000703B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2422FD18F9C32000703B4E /* Build configuration list for PBXNativeTarget "RosterAppRefactor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2422FE18F9C32000703B4E /* Debug */,
+				3D2422FF18F9C32000703B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D24230018F9C32000703B4E /* Build configuration list for PBXNativeTarget "RosterAppRefactorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D24230118F9C32000703B4E /* Debug */,
+				3D24230218F9C32000703B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D2422C318F9C32000703B4E /* Project object */;
+}
